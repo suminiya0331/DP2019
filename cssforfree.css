@@ -1,0 +1,264 @@
+@charset "UTF-8";
+
+.backtoindex{font-family:sans-serif;
+text-align:left;
+font-size:10px;
+letter-spacing:-1px;
+margin:50px 0px 0px 100px;}
+
+.title{font-family:sans-serif;
+text-align:center;
+font-size:60px;
+padding:30px;
+margin:25px 0px 50px 100px;
+letter-spacing:-4.3px;}
+
+.introduction{font-family: sans-serif;
+text-align:center;
+font-size:20px;
+letter-spacing:-1.7px;
+font-weight:bold;
+margin:0px 0px 100px 100px;
+line-height:125%;}
+
+.secondtitle
+{font-family:sans-serif;
+    text-align:left;
+    font-size:50px;
+    padding:0px;
+    margin:30px 0px 0px 225px;
+    letter-spacing:-4.3px;}
+
+.secondtext{font-family: sans-serif;
+    text-align:left;
+    font-size:17px;
+    padding:25px;
+    letter-spacing:-1.1px;
+    margin:0px -40px -100px 200px;
+    line-height:100%;}
+
+.mmockup{padding:100px;
+margin:-515px 0px 0px 350px;}
+
+.nmockup{padding:20px;
+margin:-365px 0px 50px -175px;}
+
+.ment{font-family:sans-serif;
+text-align:left;
+letter-spacing:-3px;
+font-size:45px;
+padding:20px;
+margin:300px 00px 00px 1200px;
+line-height:100%;}
+
+.pyotitle{font-size:20px;
+    letter-spacing:-1.5px;
+    margin:0px 0px 22.5px 50px;}
+.deokpyo{text-align:center;
+margin:25px 0px 200px 350px;}
+
+.minkyutitle{text-align:left;
+font-size:27.5px;
+letter-spacing:-1.5px;
+margin:100px 0px 50px 885px;
+}
+.minkyuns{padding:20px;
+margin:00px 00px 0px 0px;}
+
+.whoyoulike{font-family:sans-serif;
+    text-align:center;
+    font-size:25px;
+    letter-spacing:-1.5px;
+    margin:100px 0px 0px -45px;}
+
+.wyform{margin:50px 0px 50px -25px;}
+
+.wybutton{text-align:center;
+    margin:-20px 0px 0px -25px;}
+
+.songyoulike{font-family:sans-serif;
+        text-align:center;
+        font-size:25px;
+        letter-spacing:-1.5px;
+        margin:100px 0px 0px 95px;}
+    
+.syform{margin:50px 0px 50px 75px;}
+    
+.sybutton{text-align:center;
+        margin:-20px 0px 100px 75px;}
+
+.thirdtitle{font-family:sans-serif;
+    text-align:left;
+    font-size:50px;
+    padding:30px;
+    margin:100px 0px -30px 190px;
+    letter-spacing:-4.3px;}
+
+.thirdtext{font-family: sans-serif;
+    text-align:left;
+    font-size:17px;
+    padding:25px;
+    letter-spacing:-1.1px;
+    margin:00px 00px 00px 200px;
+    line-height:100%;}
+
+.mypl{text-align:center;
+font-size:25px;
+letter-spacing:1.5px;
+margin:0px 0px 75px 90px;}
+
+.upup{box-shadow:5px 0 15px #aeaeae;
+    margin:100px 0px 00px -300px;}
+.hp{box-shadow:5px 0 15px #aeaeae;
+    margin:100px 0px 00px 100px;}
+.enjoyfultext{font-family:sans-serif;
+    text-align:left;
+    letter-spacing:-3px;
+    font-size:45px;
+    padding:20px;
+    margin:-350px 00px 300px 1250px;
+    line-height:125%;}
+
+.audiotitle{text-align:center;
+font-size:20px;
+letter-spacing:-1.3px;
+margin:0px 0px 0px 85px;}
+
+.fsaudio{margin:50px 0px 50px 85px;}
+.hpaudio{margin:50px 0px 50px 85px;}
+
+.umpahaudio{margin:50px 0px 50px 85px;}
+
+.youtubetitle{font-family:sans-serif;
+    text-align:left;
+    margin:50px 0px 45px 200px;
+    font-size:45px;
+    padding:00px;
+    letter-spacing:-4.3px;}
+
+.youtubetext{font-family:sans-serif;
+    text-align:left;
+    font-size:17px;
+    padding:0px;
+    letter-spacing:-1.1px;
+    margin:50px 0px 0px 200px;
+    line-height:100%;}
+
+.ymockup{margin:60px 0px 0px 350px;}
+
+.yicon{margin:30px 0px 140px 60px;}
+
+.ytpyo{text-align:center;
+    margin:25px 0px 100px 750px;}
+.yttitle{margin:25px 0px 25px 0px;}
+
+.liketube{font-family:sans-serif;
+font-size:25px;
+letter-spacing:-1.5px;
+text-align:center;
+margin:40px 0px 0px 50px;}
+
+.liketubeform{margin:50px 0px 50px 50px;}
+
+.lybutton{text-align:center;
+margin:-20px 0px 0px 50px;}
+
+.diarytitle{font-family:sans-serif;
+    text-align:left;
+    margin:90px 0px 0px 200px;
+    font-size:45px;
+    padding:00px;
+    letter-spacing:-4.3px;}
+
+.diarytext{font-family:sans-serif;
+    text-align:left;
+    font-size:17px;
+    padding:0px;
+    letter-spacing:-1.1px;
+    margin:50px 0px 0px 200px;
+    line-height:100%;}
+
+.suminsdiary{box-shadow:5px 0 12.5px #aeaeae;
+    margin:100px -350px -150px 575px;}
+
+.diaryment{font-family:sans-serif;
+    text-align:left;
+    letter-spacing:-3px;
+    font-size:30px;
+    margin:-170px 00px 350px 1025px;
+    line-height:100%;}
+
+.blogment{font-family:sans-serif;
+text-align:left;
+letter-spacing:-3px;
+    font-size:30px;
+    line-height:100%;
+margin:300px 0px 0px 475px;}
+
+.bmmockup{margin:-200px 00px -350px 670px;}
+.bpmockup{margin:-225px 400px 0px 1010px;}
+
+.howaboutd{font-family:sans-serif;
+text-align:center;
+font-size:25px;
+letter-spacing:-1.5px;
+margin:100px 0px 0px 0px;}
+
+.cafetitle{font-family:sans-serif;
+    text-align:left;
+    font-size:60px;
+    padding:30px;
+    margin:75px 0px 50px 90px;
+    letter-spacing:-4.3px;}
+
+.cafeimage{text-align:center;
+margin:25px 0px 75px 750px;}
+.cafetext{font-family: sans-serif;
+    text-align:left;
+    font-size:17px;
+    padding:25px;
+    letter-spacing:-1.1px;
+    margin:-50px -40px 0px 100px;
+    line-height:100%;}
+
+.cafepyo{text-align:center;
+    margin:25px 0px 0px 675px;}
+
+.cafeyoulike{font-family:sans-serif;
+    text-align:center;
+    font-size:25px;
+    letter-spacing:-1.5px;
+    margin:75px 0px -0px 115px;}
+
+.cafeform{margin:50px 0px 50px 115px}
+
+.cfbutton{text-align:center;
+    margin:-20px 0px 100px 115px;}
+
+.hw{text-align:center;
+margin:100px 0px 0px 125px;}
+.hwtitle{text-align:center;
+font-size:22px;
+letter-spacing:-1.30x;
+margin:100px 0px 50px 150px;}
+.hwa{text-align:center;
+font-size:17px;
+letter-spacing:-1.1px;
+line-height:100%;
+margin:0px 0px 100px 150px;}
+
+.ftitle{text-align:center;
+    font-size:22px;
+    letter-spacing:-1.30x;
+    margin:100px 0px 50px 115px;}
+
+.feeling{text-align:center;
+    font-size:17px;
+    letter-spacing:-1.1px;
+    line-height:100%;
+    margin:0px 0px 100px 115px;}
+
+footer{text-align:center;
+font-size:10px;
+letter-spacing:-0.75px;
+margin:0px 0px 50px 125px;}
