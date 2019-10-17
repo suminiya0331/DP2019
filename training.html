@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>HTML 연습</title>
+    <link rel="stylesheet" href="C:\Users\cidis\Documents\GitHub\DP2019\cssforpp.css">
+    <!--euc=kr, utf-8 한글 인코딩-->
+    <meta charset="utf-8" />
+    <meta name="author" content="강수민" />
+    <meta name="keywords" content="계원예대" />
+</head>
+<body>
+        <a href="./index.html">돌아오기</a>
+    <!--h1=h6 제목. 순번x, 깊이(depth)-->
+    <h1>대한민국</h1>
+    <h2>서울</h2>
+    <h3>영등포구</h3>
+    <h3>마포구</h3>
+    <h2>경기도</h2>
+    <h3>과천시</h3>
+    <h3>의왕시 </h3>
+    <p>계원예술대학교가 있는 도시</p>
+    <hr />
+    <h3>안양시</h3>
+    <h2>충청도</h2>
+    <h2>강원도</h2>
+    <h1>미국</h1>
+    <h1>중국</h1>
+    <h1>일본</h1>
+
+    <!--anchor 닻-->
+    <a href="https://www.naver.com" target="_blank">네이버 바로가기</a>
+    <!--_self,_blank-->
+
+    <!-- image 그림 -->
+    <img src="https://www.thehappycatsite.com/wp-content/uploads/2017/05/cute1.jpg" />
+    <img src="shiba_inu_cute_puppies.jpg">
+
+    <!-- p 문단-->
+    <p>
+        서술형으로 되어있는 한 주제에 대한 글이 들어갑니다.
+    </p>
+    <p>
+        주제가 바뀌면 새로운 문단이 시작됩니다.
+    </p>
+
+    <!-- br 줄내림 -->
+    주제가 바뀌면 <br /> 새로운 문단이 시작됩니다.
+
+    <!-- hr 가로줄 -->
+    <hr /> 
+
+    <!-- unordered list 비 순차적 목록 -->
+    <ul>
+        <li>설탕 100g</li>
+        <li>소금 100g</li>
+        <li>물 100ml</li>
+    </ul>
+    <!-- ordered list 순차적 목록 -->
+    <ol>
+        <li>물을 끓인다</li>
+        <li>라면을 끓인다</li>
+        <li>먹는다</li>
+        <li>설거지를 한다</li>
+
+    <!-- difinition list 정의형 목록 -->
+    <d1>
+        <dt>unordered list 비 순차적 목록</dt>
+        <dd>순서에 관계없이 나열하는 목록을 이야기한다.</dd>
+
+        <dt>ordered list 비 순차적 목록</dt>
+        <dd>순서에 중요한 의미가 있는 목록을 이야기한다.</dd>
+    </d1>
+        <!-- strong, em <> b, i -->
+        <strong>강한 강조</strong>
+        <em>강조</em>
+        
+        <b>볼드체</b>
+        <i>이탈릭체</i>
+        
+        <!-- ins 첨부글, del 삭제글 <> u, strike-->
+        <ins>첨부하는 내용</ins>
+        <del>삭제되는 내용</del>
+        
+        <u>밑줄</u>
+        <strike>중간줄</strike>
+        2<sup>2</sup> : 제곱수
+        H<sub>2</sub>0 : 물의 화학식
+        
+           <!--table, tr: 한 줄 ,td: 한 칸-->
+           <style>table, tr, td {border: solid 1px rgb(233, 233, 233);}</style>
+        
+           <!--summary 요약, caption 표제-->
+           <table summary= "표 설명">
+               <caption>[표1]표 제목</caption>
+               <!-- thead: 제목구간, tbody: 내용구간, tfoot:결론구간 (있으면 표를 좀 더 명확하게 알 수 있음)-->
+               <!-- scope 초점, 망원경 : col열, raw행-->
+               <thead>
+               <tr>
+                   <th scope="col">제목1</th>
+                   <th scope="col">제목2</th>
+                   <th scope="col">제목3</th>
+                   <th scope="col">제목4</th>
+                   <th scope="col">제목5</th>
+                   <!-- scope을 명시해줘야 가로줄에대한 제목인지 세로줄에 대한 제목인지 알 수 있다.-->
+               </tr>
+               </thead>
+   
+               <tbody>
+               <tr>
+                   <!--cplspan 가로(열)늘이기, rowspan 세로(행)늘이기-->
+                   <td colspan="2">1</td>
+                   <td rowspan="2">2</td>
+                   <td>3</td>
+                   <td>4</td>
+               </tr>
+               </tbody>
+               <tr>
+                       <td>5</td>
+                       <td>6</td>
+                       <td>7</td>
+                       <td>8</td>
+                   </tr>
+           </table>
+   
+                           <!--table, tr: 한 줄 ,td: 한 칸-->
+                	
+<style>
+        table{
+            border: 1px solid black;
+        }
+        td{
+            border: 1px solid black;
+        }</style>
+        
+                <!--summary 요약, caption 표제-->
+                <table summary= "표 설명">
+                    <!-- thead: 제목구간, tbody: 내용구간, tfoot:결론구간 (있으면 표를 좀 더 명확하게 알 수 있음)-->
+                    <!-- scope 초점, 망원경 : col열, raw행-->
+                            <table>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>5</td>
+                                        <td>6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>8</td>
+                                        <td>9</td>
+                                    </tr>
+                                </table>
+
+                                <table>
+                                        <tr>
+                                            <td colspan="4">up</td>
+                                            <td rowspan="2">right</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2">left</td>
+                                            <td colspan="2">center</td>
+                                         
+                                        </tr>
+                                        <tr>
+                                             <td colspan="4">down</td>
+                                        </tr>
+                                    </table>
+                                    <form>
+                                            <input type="text" placeholder="아이디를 입력하세요." />
+                                            <input type="password" placeholder="패스워드를 입력하세요." />
+                                            <input type="radio" name="bt1"/>
+                                            <input type="radio" name="bt1"/>
+                                            <input type="radio" name="bt1"/>
+                                            <!-- name이 동일 해야함-->
+                                            <input type="radio" name="bt2"/>
+                                            <input type="radio" name="bt2"/>
+                                            <input type="radio" name="bt2"/>
+                                    
+                                            <input box="checkbox" />
+                                            <input box="checkbox" />
+                                            <input box="checkbox" />
+                                            <input box="checkbox" />
+                                            <input box="checkbox" />
+                                            <input box="checkbox" />
+                                    
+                                            <select>
+                                                <option>짜장면</option>
+                                                <option>짬뽕</option>
+                                            </select>
+                                    
+                                            <!-- 가로 3글자, 세로 5줄 정도의 크기 -->
+                                            <textarea col="3" raw="5"></textarea>
+                                    
+                                            <input type="button" value="버튼이름">
+                                            <input type="button" vaalue="테스트버튼" onclick="alert('테스트 버튼이 눌렸습니다.')">
+                                    
+                                            <input type="submit" value="제출">
+                                        </form>
+</body>
+</html>

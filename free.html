@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>프로그래밍</title>
+    <link rel="stylesheet" href="C:\Users\cidis\Documents\GitHub\DP2019\cssforfree.css"></link>
+    <!--euc=kr, utf-8 한글 인코딩-->
+    <meta charset="utf-8" />
+</head>
+
+<body>
+<nav class="backtoindex">
+<a href=index.html>Back to Index</a>
+</nav>
+
+<p class="title">
+<strong>My Rest Method</strong>
+</p>
+
+<p class="introduction">
+통학과 과제의 삶 속 지친 나를 위한
+<br></br>나만의 휴식 방법
+</p>
+
+<p class="secondtitle">
+<strong><em>Fanboying</em></strong>
+</p>
+
+<p class="secondtext">
+<strong>나에게 항상 힘이 되어주는 존재들 중 일부는 내가 좋아하는 연습생들입니다.</strong><br></br>
+<strong>그들의 영상과 사진을 볼 때마다 기운이 나기도 하고 목표를 향해 밤낮을 노력하는 그들을 보며 저 또한 뿌듯함을 느끼기도 합니다.</strong>
+</p>
+
+<div style=text-align:center;>
+<p class="ment">
+<strong>They are
+<br></br>Power of
+<br></br>Me.</strong></p>
+</div>
+
+<img class= "mmockup" src="minkyumockup.png"  width=20% height=20%></img>
+<a href="https://tv.naver.com/v/10294313" target=_blank>
+<img class= "nmockup" src="noltomockup.png" width=20% height=20%></img>
+</a>
+
+<div class="deokpyo" style=text-align:center;>
+<!--table, tr: 한 줄 ,td: 한 칸-->
+<style>
+table, tr, td {border: solid 1px rgb(233, 233, 233);}
+</style>
+        
+<!--summary 요약, caption 표제-->
+<table summary= "내가 좋아하는 연습생들">
+<caption class="pyotitle">
+<strong>내가 좋아하는 연습생들</strong>
+</caption>
+<!-- thead: 제목구간, tbody: 내용구간, tfoot:결론구간 (있으면 표를 좀 더 명확하게 알 수 있음)-->
+<!-- scope 초점, 망원경 : col열, raw행-->
+<thead>
+<tr>
+       <th scope="col">이름</th>
+       <th scope="col">사진</th>
+       <th scope="col">생년월일</th>
+       <th scope="col">혈액형</th>
+       <th scope="col">학교</th>
+       <th scope="col">소속사</th>
+ <!-- scope을 명시해줘야 가로줄에대한 제목인지 세로줄에 대한 제목인지 알 수 있다.-->
+</tr>
+</thead>
+    
+<tbody>
+<tr>
+<!--colspan 가로(열)늘이기, rowspan 세로(행)늘이기-->
+        <td colspan="1"><strong>김민규</strong></td>
+        <td colspan="1"><img src="kmk.jpg"></img></td>
+        <td colspan="1">2001.03.12</td>
+        <td colspan="1">A형</td>
+        <td colspan="1">서울 영동고등학교</td>
+        <td colspan="1">젤리피쉬</td>
+</tr>
+<tr>
+        <td colspan="1"><strong>황윤성</strong></td>
+        <td colspan="1"><img src="hys.jpg"></img></td>
+        <td colspan="1">2000.10.30</td>
+        <td colspan="1">AB형</td>
+        <td colspan="1">백석예대 음악학부</td>
+        <td colspan="1">울림 엔터</td>
+</tr>               
+<tr>
+        <td colspan="1"><strong>김국헌</strong></td>
+        <td colspan="1"><img src="kkh.jpg"></img></td>
+        <td colspan="1">1997.04.15</td>
+        <td colspan="1">A형</td>
+        <td colspan="1">서울예대 실용음악과</td>
+        <td colspan="1">뮤직웍스</td>
+</tr>
+<tr>
+        <td colspan="1"><strong>이진우</strong></td>
+        <td colspan="1"><img src="ljw.jpg"></img></td>
+        <td colspan="1">2004.09.13</td>
+        <td colspan="1">A형</td>
+        <td colspan="1">서울 송파중학교</td>
+        <td colspan="1">마루기획</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p class="minkyutitle">
+<strong>김민규 직캠</strong>
+</p>
+
+<div style=text-align:center;>
+<video weight=720 height=540 controls muted>
+<source src="media/kimminkyujk.mkv" class="minkyuns" type="video/mp4" weight=30% height=30%></source>
+</video>
+</div>
+
+
+<p class="whoyoulike">
+<strong>여러분이 좋아하는 연예인은 누구인가요?</strong>
+</p>
+    
+<div style=text-align:center>
+<textarea class="wyform" col="20" raw="50"></textarea>
+</div>
+
+<p class="wybutton">
+<input type="button" value="제출" onclick="alert('의견이 제출되었습니다.')"></input>
+</p>
+
+<p class="thirdtitle">
+<strong><em>Listening to Music</em></strong>
+</p>
+
+<h1 class="thirdtext">
+마음이 힘들거나 심심할 때 노래를 들으면 신나고, 착잡하던 마음이 괜찮아집니다.
+<br></br> 최신 가요부터 추억의 영화 OST까지 여러 노래를 들으면서 생각에 잠길 때도 많습니다.
+<br></br> 그러다보면 휴식 시간이 빨리 지나기도 합니다.
+</h1>
+
+<div class="enjoyfulmusic" style=text-align:center;>
+<a href="https://www.youtube.com/watch?v=vHS9E6JFja8" target=_blank>
+<img class="upup" src=upupmusic.jpg width=17.5% height=17.5%>
+</img></a>
+<a href="https://www.youtube.com/watch?v=UuPb1J_RCJM" target=_blank>
+<img class="hp" src=hpmusic.jpg width=17.5% height=17.5%>
+</img></a>
+
+<p class="enjoyfultext">
+<strong>Enjoyful<br></br>Songs</strong>
+</p>
+</div>
+
+<p class="mypl">
+<strong><em>My Playlist</em></strong>
+</p>
+
+<p class="audiotitle">
+<strong>Harry Potter Soundtrack - Prologue</strong>
+</p>
+
+<div class="hpaudio" style=text-align:center;>
+<audio controls muted>
+<source src="audios/hpprologue.mp3" type="audio/mp3"></source>
+</audio>
+</div>
+
+<p class="audiotitle">
+<strong>Twice - Feel Special</strong>
+</p>
+<div class="fsaudio" style=text-align:center;>
+<audio controls muted>
+<source src="audios/fs.mp3" type="audio/mp3"></source>
+</audio>
+</div>
+
+<p class="audiotitle">
+<strong>레드벨벳 - 음파음파</strong>
+</p>
+<div class="umpahaudio" style=text-align:center;>
+<audio controls muted>
+<source src="audios/umpahum.mp3" type="audio/mp3"></source>
+</audio>
+</div>
+
+<p class="songyoulike">
+<strong>좋아하는 노래를 자유롭게 적어주세요.</strong>
+</p>
+    
+<div style=text-align:center>
+<textarea class="syform" col="20" raw="50"></textarea>
+</div>
+
+<p class="sybutton">
+<input type="button" value="제출" onclick="alert('의견이 제출되었습니다.')"></input>
+</p>
+
+<p class="youtubetitle">
+<strong><em>Watching Videos on Youtube</em></strong>
+</p>
+
+<p class="youtubetext">
+<strong>유튜브에는 힐링에 도움이 되는 좋은 영상들이 많습니다.</strong>
+<br></br><strong>그런 영상을 보면서 시간을 보내다보면 마음 한 곳이 왜인지 모르게 뿌듯합니다.</strong>
+</p>
+
+<a href="https://www.youtube.com/watch?v=8vAsg37pyC8" target=_blank><img class="ymockup" src="youtubemockup.png" width=40% height=40%></img></a>
+
+<a href="https://youtube.com" target=_blank><img class="yicon" src="youtubeicon.png" width=10% height=10%></img></a>
+
+<div class="ytpyo" style=text-align:center;>
+<!--table, tr: 한 줄 ,td: 한 칸-->
+<style>table, tr, td {border: solid 1px rgb(233, 233, 233);}</style>
+
+<!--summary 요약, caption 표제-->
+<table summary= "내가 좋아하는 유튜브 채널">
+<caption class="yttitle"><strong>내가 좋아하는 유튜브 채널</strong></caption>
+<!-- thead: 제목구간, tbody: 내용구간, tfoot:결론구간 (있으면 표를 좀 더 명확하게 알 수 있음)-->
+<!-- scope 초점, 망원경 : col열, raw행-->
+<thead>
+<tr>
+<th scope="col" style=text-align:center;>채널 이름</th>
+<th scope="col" style=text-align:center;>주요 콘텐츠 </th>
+<th scope="col" style=text-align:center;>구독자 수</th>
+<!-- scope을 명시해줘야 가로줄에대한 제목인지 세로줄에 대한 제목인지 알 수 있다.-->
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<!--colspan 가로(열)늘이기, rowspan 세로(행)늘이기-->
+<td colspan="1">mochamilk</td>
+<td colspan="1">강아지 모카와 밀크의 이야기</td>
+<td colspan="1">54.2만명</td>
+</tr>
+
+<tr>
+<td colspan="1">러블리 토스타빅토리</td>
+<td colspan="1">애완토끼의 이야기</td>
+<td colspan="1">3.1만명</td>
+</tr>
+
+<tr>
+<td colspan="1">김동우</td>
+<td colspan="1">케이팝 편곡</td>
+<td colspan="1">42.1만명</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p class="liketube">
+<strong>여러분이 좋아하는 유튜브 콘텐츠는 무엇인가요?</strong>
+</p>
+
+<div style=text-align:center>
+<textarea class="liketubeform" col="6" raw="38"></textarea>
+</div>
+
+<p class="lybutton">
+<input type="button" value="제출" onclick="alert('의견이 제출되었습니다.')"></input>
+</p>
+
+<p class="diarytitle">
+<strong><em>Writing My Diary</em></strong>
+</p>
+
+<p class="diarytext">
+<strong>일기를 쓰면서 나 자신에 대한 성찰을 하는 경우가 많습니다.
+<br></br>나 자신뿐만아니라 대인관계부터 사회, 세상의 일까지도 곰곰히 생각할 수 있는 시간을
+<br></br>보낼 수 있기도 합니다.</strong>
+</p>
+
+<p>
+<img class="suminsdiary" src="mydiary.jpg" width=17.5% height=17.5%></img>
+</p>
+
+<p class="diaryment">
+<strong>글을 쓰며
+<br></br>하루를 돌아보는
+<br></br>시간들</strong>
+</p>
+
+<p class="blogment">
+    <strong>블로그에도
+    <br></br>일기 쓰는
+    <br></br>시간을</strong>
+</p>
+
+<div class="blogmockups">
+<img class="bmmockup" src="blogmainmockup.png" width=20% height=20%></img>
+<img class="bpmockup" src="blogpostmockup.png" width=20% height=20%></img>
+</div>
+
+<p class="howaboutd">
+<strong>일기를 간단하게 써보는 건 어떤가요?</strong>
+</p>
+
+<div style=text-align:center>
+<textarea class="liketubeform" col="20" raw="50"></textarea>
+</div>
+
+<p class="lybutton">
+<input type="button" value="작성 완료하기" onclick="alert('일기 작성이 완료되었습니다.')"></input>
+</p>
+
+<p class="cafetitle">
+<strong><em>Staying in a Cafe</em></strong>
+</p>
+
+<p class="cafetext">
+<strong>힘든데 실외에 있긴 싫을 때마다 가는 곳이 카페입니다.
+<br></br>카페에서 제가 좋아하는 메뉴를 섭취하며 가만히 있으면
+<br></br>마음이 차분히 가라앉는 걸 느낄 수 있습니다.</strong>
+</p>
+
+<img src="cafef.jpg" width=25% height=25% class="cafeimage"></img>
+
+<div class="cafepyo" style=text-align:center;>
+<!--table, tr: 한 줄 ,td: 한 칸-->
+<style>table, tr, td {border: solid 1px rgb(233, 233, 233);}</style>
+    
+<!--summary 요약, caption 표제-->
+<table summary= "표 설명">
+<caption class="tytitle"><strong>내가 주로 가는 카페</strong></caption>
+<!-- thead: 제목구간, tbody: 내용구간, tfoot:결론구간 (있으면 표를 좀 더 명확하게 알 수 있음)-->
+<!-- scope 초점, 망원경 : col열, raw행-->
+<thead>
+<tr>
+<th scope="col" style=text-align:center;>한글 이름</th>
+<th scope="col" style=text-align:center;>영문 이름</th>
+<th scope="col" style=text-align:center;>로고</th>
+<th scope="col" style=text-align:center;>설립년도 </th>
+<th scope="col" style=text-align:center;>내가 섭취하는 메뉴</th>
+<!-- scope을 명시해줘야 가로줄에대한 제목인지 세로줄에 대한 제목인지 알 수 있다.-->
+</tr>
+</thead>
+    
+<tbody>
+<tr>
+<!--colspan 가로(열)늘이기, rowspan 세로(행)늘이기-->
+<td colspan="1"><strong>이디야 커피</strong></td>
+<td colspan="1"><strong>EDIYA COFFEE</strong></td>
+<td colspan="1">
+<img src="ediya.jpg"></img>
+</td>
+<td colspan="1">2001년</td>
+<td colspan="1">초코라떼</td>
+</tr>
+
+<tr>
+<td colspan="1"><strong>스타벅스</strong></td>
+<td colspan="1"><strong>STARBUCKS</strong></td>
+<td colspan="1">
+<img src="starbucks.png" width=225px height=225px></img>
+</td>
+<td colspan="1">1971년</td>
+<td colspan="1">초코라떼</td>
+</tr>               
+
+<tr>
+<td colspan="1"><strong>요거프레소</strong></td>
+<td colspan="1"><strong>YOGE PRESSO</strong></td>
+<td colspan="1">
+<img src="yoge.jpg" width=225px height=225px></img>
+</td>
+<td colspan="1">2007년</td>
+<td colspan="1">와플</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p class="cafeyoulike">
+<strong>여러분이 제일 좋아하는 카페는 어느 곳인가요?</strong>
+</p>
+
+<div style=text-align:center>
+<textarea class="cafeform" col="20" raw="50"></textarea>
+</div>
+
+<p class="cfbutton">
+<input type="button" value="제출" onclick="alert('의견 제출이 완료되었습니다.')"></input>
+</p>
+
+<hr />
+
+<p class="hwtitle">
+<strong>My Rest Method - 회원가입창</strong>
+</p>
+
+<p class="hwa">
+<strong>회원가입하여 여러분의 휴식 방법, 취미를 공유하세요!</strong>
+</p>
+
+<div class="hw">
+<p><strong>아이디</strong></p>
+<textarea col="1" raw="5"></textarea>
+
+<p><strong>닉네임</strong></p>
+<textarea col="1" raw="5"></textarea>
+
+<p><strong>비밀번호</strong></p>
+<p><input type="password" placeholder="패스워드를 입력하세요." /></p>
+
+<p><strong>이름</strong></p>
+<textarea col="1" raw="5"></textarea>
+
+<p><strong>생년월일</strong></p> 
+<select>
+    <option>1920</option>
+    <option>1921</option>
+    <option>1922</option>
+    <option>1923</option>
+    <option>1924</option>
+    <option>1925</option>
+    <option>1926</option>
+    <option>1927</option>
+    <option>1928</option>
+    <option>1929</option>
+    <option>1930</option>
+    <option>1931</option>
+    <option>1932</option>
+    <option>1933</option>
+    <option>1934</option>
+    <option>1935</option>
+    <option>1936</option>
+    <option>1937</option>
+    <option>1938</option>
+    <option>1939</option>
+    <option>1940</option>
+    <option>1941</option>
+    <option>1942</option>
+    <option>1943</option>
+    <option>1944</option>
+    <option>1945</option>
+    <option>1946</option>
+    <option>1947</option>
+    <option>1948</option>
+    <option>1949</option>
+    <option>1950</option>
+    <option>1951</option>
+    <option>1952</option>
+    <option>1953</option>
+    <option>1954</option>
+    <option>1955</option>
+    <option>1956</option>
+    <option>1957</option>
+    <option>1958</option>
+    <option>1959</option>
+    <option>1960</option>
+    <option>1961</option>
+    <option>1962</option>
+    <option>1963</option>
+    <option>1964</option>
+    <option>1965</option>
+    <option>1966</option>
+    <option>1967</option>
+    <option>1968</option>
+    <option>1969</option>
+    <option>1970</option>
+    <option>1971</option>
+    <option>1972</option>
+    <option>1973</option>
+    <option>1974</option>
+    <option>1975</option>
+    <option>1976</option>
+    <option>1977</option>
+    <option>1978</option>
+    <option>1979</option>
+    <option>1980</option>
+    <option>1981</option>
+    <option>1982</option>
+    <option>1983</option>
+    <option>1984</option>
+    <option>1985</option>
+    <option>1986</option>
+    <option>1987</option>
+    <option>1988</option>
+    <option>1989</option>
+    <option>1990</option>
+    <option>1991</option>
+    <option>1992</option>
+    <option>1993</option>
+    <option>1994</option>
+    <option>1995</option>
+    <option>1996</option>
+    <option>1997</option>
+    <option>1998</option>
+    <option>1999</option>
+    <option>2000</option>
+    <option>2001</option>
+    <option>2002</option>
+    <option>2003</option>
+    <option>2004</option>
+    <option>2005</option>
+    <option>2006</option>
+    <option>2007</option>
+    <option>2008</option>
+    <option>2009</option>
+    <option>2010</option>
+    <option>2011</option>
+    <option>2012</option>
+    <option>2013</option>
+    <option>2014</option>
+    <option>2015</option>
+    <option>2016</option>
+    <option>2017</option>
+    <option>2018</option>
+    <option>2019</option>
+</select>
+
+<select>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+    <option>7</option>
+    <option>8</option>
+    <option>9</option>
+    <option>10</option>
+    <option>11</option>
+    <option>12</option>
+</select>
+
+<select>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+    <option>7</option>
+    <option>8</option>
+    <option>9</option>
+    <option>10</option>
+    <option>11</option>
+    <option>12</option>
+    <option>13</option>
+    <option>14</option>
+    <option>15</option>
+    <option>16</option>
+    <option>17</option>
+    <option>18</option>
+    <option>19</option>
+    <option>20</option>
+    <option>21</option>
+    <option>22</option>
+    <option>23</option>
+    <option>24</option>
+    <option>25</option>
+    <option>26</option>
+    <option>27</option>
+    <option>28</option>
+    <option>29</option>
+    <option>30</option>
+    <option>31</option>
+</select>
+
+<p><strong>성별</strong></p>
+
+<select>
+    <option>여자</option>
+    <option>남자</option>
+</select>
+
+<p>
+<strong>본인 확인 이메일</strong>(선택)
+</p>
+
+<p>
+<textarea col="1" raw="3"></textarea>
+<strong>@</strong>
+<select>
+    <option>naver.com</option>
+    <option>daum.net</option>
+    <option>nate.com</option>
+    <option>gmail.com</option>
+    <option>hanmail.net</option>
+</select></p>
+
+<p>휴대전화</p>
+<p><select>
+    <option>대한민국 +82</option>
+    <option>미국/캐나다 +1</option>
+    <option>영국 +44</option>
+    <option>중국 +86</option>
+    <option>일본 +81</option>
+    <option>베트남 +84</option>
+    <option>대한민국 +82</option>
+    <option>독일 +49</option>
+    <option>멕시코 +52</option>
+    <option>인도 +91</option>
+    <option>인도네시아 +62</option>
+    <option>동티모르 +670</option>
+    <option>프랑스 +33</option>
+    <option>호주 +61</option>
+    <option>덴마크 +45</option>
+    <option>러시아/카자흐스탄 +7</option>
+</select></p>
+
+<textarea col="1" raw="5"></textarea>
+
+<p><input type="button" value="인증번호 발송" onclick="alert('인증번호가 발송되었습니다.')"></input></p>
+
+<textarea col="1" raw="5"></textarea>
+
+<p>
+<input type="button" value="가입하기" onclick="alert('회원가입이 완료되었습니다.')"></input>
+</p>
+</div>
+
+<hr />
+
+<p class="ftitle">
+<strong>느낀 점</strong>
+</p>
+
+<p class="feeling">
+<strong>프로그래밍을 하면서 많이 헤매히도 했지만,
+<br></br>좋은 경험이 된 것 같습니다!
+<br></br>덕분에 HTML과 CSS에 더 관심을 갖게 되었습니다.</strong>
+</p>
+
+<footer>
+<strong>Designed by Sumin Kang, Kaywon University of Art $ Design. DMD</strong>
+</footer>
+
+</body>
+
+</html>
