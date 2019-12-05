@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>기말고사</title>
+        <meta charset="utf-8"/>
+        <style>
+         @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+            body{
+                font-family: 'Noto Sans KR', sans-serif;
+                background-color: black;
+                color:gold;
+            }
+            header{
+                background-color:black;
+                background-blend-mode: color-burn;
+                color: gold;
+                margin-bottom:125px;
+            }
+            header>nav>ul>li{
+                height:50px;
+                float: left;
+                list-style: none;
+                margin:45px 25px 25px 25px; /* 상우 하좌 */
+                font-size:15px;
+            }
+            .menu{
+                text-decoration:none;
+                color:gold;
+            }
+            .menu:visited{
+                text-decoration:none;
+                color:gold;
+            }
+            #main_visual{
+                background-image: url("delluna/backgroundimage_ht.png");
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+                /*repeat, no-repeat, repeat-x, repeat-y*/
+                background-color: black;
+                background-position: 50% 50%;
+                height:800px;
+
+                color: white;
+                text-align: left;
+                padding: 100px 0px;
+            }
+            .main_visual_text{
+                margin:475px 0px 0px 100px;
+                float:left;
+            }
+            #main_visual h2{
+                font-size: 60px;
+                font-weight: bold;
+                letter-spacing:0px;
+                line-height:75%;
+            }
+            .long_line_main_visual{
+                border: solid 0.5px white;
+                width: 550px;
+                color: white;
+            }
+            .main_visual_ment{
+                font-size:19px;
+                letter-spacing:-0.8px;
+                margin-top:35px;
+                line-height:100%;
+            }
+            #main_visual img{
+                margin: 100px 0px 0px 0px; /*상우하좌 (위로부터 시계방향)*/
+            }
+            .dellunaintro_square{
+                text-align:center;
+                margin-top:50px;
+                margin-bottom:200px;
+            }
+            .float_right{
+                float:right;
+            }
+            .float_left{
+                float:left;
+            }
+            .clear{
+                clear:both; height:0; overflow:hidden;
+            }
+            .characterintro{
+                margin-top: 100px;
+                margin-bottom: 30px;
+            }
+            .characterintrotitle{
+                text-align:center;
+                font-size:25px;
+                letter-spacing: 5px;
+            }
+            .characterintrotext{
+                text-align:center;
+                line-height:105%;
+                letter-spacing:-0.8px;
+            }
+            .container{
+                width:1600px;
+                height:900px;
+                padding:10px;
+                margin-bottom: 100px;
+                margin-left: auto; /* 바깥여백-왼쪽: 지동 */
+                margin-right: auto;
+            }
+            .maincharacter
+            {
+                float: left;
+                margin-bottom:50px;
+                width:450px;
+                padding:20px;
+                margin-left: auto; /* 바깥여백-왼쪽: 지동 */
+                margin-right: auto;
+            }
+            .content_part
+            {
+                float: left; /*둥둥 떠다니기 왼쪽 기준으로*/
+                width:500px;
+                padding:15px;
+                margin-left: auto; /* 바깥여백-왼쪽: 지동 */
+                margin-right: auto;
+            }
+            .container>section
+            {
+                /* margin-left: 180px; */
+                width: 1000px;
+                margin-left: auto; /* 바깥여백-왼쪽: 지동 */
+                margin-right: auto;
+                text-align:center;
+                padding:100px;
+            }
+            .container dt
+            {
+                font-weight:bold;
+                margin-top:25px;
+                margin-bottom:25px;
+                margin-left:auto;
+                margin-right:auto;
+                letter-spacing:-0.8px;
+                color: gold;
+                font-size:19px;
+            }
+            .container dd
+            {
+                margin-top:10px;
+                margin-bottom:10px;
+                margin-left:auto;
+                margin-right:auto;
+                line-height:110%;
+                letter-spacing:-0.8px;
+                color: gold;
+            }
+            .short_line{
+                border: solid 0.5px gold;
+                width: 50px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-top:auto;
+                margin-bottom:25px;
+                color: gold;
+            }
+            .middle_line{
+                border: solid 0.5px gold;
+                width: 150px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-top:auto;
+                margin-bottom:25px;
+                color: gold;
+            }
+            #wrap
+            {
+                min-width:100px; /*최소 넓이*/
+                max-width:1920px; /*최대 넓이*/
+                margin-left:auto;
+                margin-right:auto;
+            }
+            .manweolcircle{
+                width: 400px;                              
+                height: 400px;                            
+                background: black;                          
+                border-radius: 400px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-top:auto;
+                margin-bottom:20px;
+                background-image: url("delluna/mwgold.png");
+            }
+            .chanseongcircle{
+                width: 400px;                              
+                height: 400px;                            
+                background: black;                          
+                border-radius: 400px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom:20px;
+                background-image: url("delluna/csgold.png");
+            }
+            .manweolcircle:hover{
+                background-image: url("delluna/mwgold_2.png");
+            }
+            .chanseongcircle:hover{
+                background-image: url("delluna/csgold_2.png");
+            }
+            .othercharacters{
+                width: 1430px;
+                padding: 20px;
+                margin-left:auto;
+                margin-right:auto;
+                text-align:center;
+                margin-bottom:200px;
+                position:static; left:0; right:0;
+            }
+            .othercharacters>nav>ul>li{
+                float: left;
+                list-style: none;
+                padding:5px;
+                line-height:100%;
+            }
+            .othercharacters_text{
+                font-size: 14px;
+                line-height: 95%;
+                letter-spacing: -0.7px;
+            }
+            .blanklogo{
+                margin-left:80px;
+                margin-top:160px;
+            }
+            .hotelemployees{
+                width: 1430px;
+                padding: 20px;
+                margin-left:auto;
+                margin-right:auto;
+                text-align:center;
+                position:static; left:0; right:0;
+                margin-bottom:200px;
+            }
+            .hotelemployees>nav>ul>li{
+                float: left;
+                list-style: none;
+                padding:5px;
+                line-height:100%;
+            }
+            .hotelemployees_text{
+                font-size:14px;
+                line-height:95%;
+                letter-spacing:-0.7px;
+            }
+            .videos{
+                text-align:center;
+                margin-bottom:200px;
+            }
+            .videotext{
+                font-size:20px;
+                letter-spacing:-0.85px;
+                line-height:100%;
+                font-weight:bold;
+            }
+            .content_part2
+            {
+                text-align:center;
+                width:300px;
+                padding:20px;
+                float:left;
+            }
+            .content{
+                width: 1400px;
+                padding: 20px;
+                margin-left:auto;
+                margin-right:auto;
+                text-align:center;
+                margin-bottom:200px;
+            }
+            .osttitle{
+                font-size:15px;
+            }
+            .osttext{
+                font-size:14px;
+                line-height:110%;
+            }
+            .circle1{
+                width: 300px;                              
+                height: 300px;                            
+                background: black;                        
+                border-radius: 400px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom:10px;
+                background-image: url("delluna/1927.png");
+            }
+            .circle2{
+                width: 300px;                              
+                height: 300px;                            
+                background: black;                        
+                border-radius: 400px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom:10px;
+                background-image: url("delluna/1927_2.png");
+            }
+            .circle3{
+                width: 300px;                              
+                height: 300px;                            
+                background: black;                        
+                border-radius: 400px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom:10px;
+                background-image: url("delluna/1932.png");
+            }
+            .circle4{
+                width: 300px;                              
+                height: 300px;                            
+                background: black;                        
+                border-radius: 400px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom:10px;
+                background-image: url("delluna/1932_2.png");
+            }
+            .circle5{
+                width: 300px;                              
+                height: 300px;                            
+                background: black;                        
+                border-radius: 400px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom:10px;
+                background-image: url("delluna/1960.png");
+            }
+            .circle5:hover{
+                width: 300px;                              
+                height: 300px;                            
+                background: black;                        
+                border-radius: 400px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom:10px;
+                background-image: url("delluna/1960_black.png");
+            }
+            .circle6{
+                width: 300px;                              
+                height: 300px;                            
+                background: black;                        
+                border-radius: 400px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom:10px;
+                background-image: url("delluna/1972.png");
+            }
+            .circle7{
+                width: 300px;                              
+                height: 300px;                            
+                background: black;                        
+                border-radius: 400px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom:10px;
+                background-image: url("delluna/1988.png");
+            }
+            .circle7:hover{
+                width: 300px;                              
+                height: 300px;                            
+                background: black;                        
+                border-radius: 400px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom:10px;
+                background-image: url("delluna/1988_black.png");
+            }
+            .circle8{
+                width: 300px;                              
+                height: 300px;                            
+                background: black;                        
+                border-radius: 400px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom:10px;
+                background-image: url("delluna/2019.png");
+            }
+            .circle8:hover{
+                width: 300px;                              
+                height: 300px;                            
+                background: black;                        
+                border-radius: 400px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom:10px;
+                background-image: url("delluna/2019_black.png");
+            }
+            .circle9{
+                width: 300px;                              
+                height: 300px;                            
+                background: black;                        
+                border-radius: 400px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom:10px;
+                background-image: url("delluna/2019_2.png");
+            }
+            .circle9:hover{
+                width: 300px;                              
+                height: 300px;                            
+                background: black;                        
+                border-radius: 400px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom:10px;
+                background-image: url("delluna/2019_2_black.png");
+            }
+            .history{
+                width:1500px;
+                padding: 50px;
+                margin-top: 20px;
+                text-align: center;
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom:200px;
+            }
+            .history_part
+            {
+                float: left; /*둥둥 떠다니기 왼쪽 기준으로*/
+                width:390px;
+                padding:50px;
+            }
+            .history dt
+            {
+                font-weight:bold;
+                margin-top:25px;
+                margin-bottom:25px;
+                margin-left:auto;
+                margin-right:auto;
+                letter-spacing:-0.8px;
+                color: gold;
+                font-size:19px;
+            }
+            .history dd
+            {
+                margin-top:10px;
+                margin-bottom:10px;
+                margin-left:auto;
+                margin-right:auto;
+                line-height:110%;
+                letter-spacing:-0.8px;
+                color: gold;
+            }
+            .characterintro_2{
+                margin-top: 100px;
+                margin-bottom: 30px;
+            }
+            footer{
+                padding:100px;
+                font-size:13px;
+                letter-spacing:-0.8px;
+                text-align:center;
+                margin-left:auto;
+                margin-right:auto;
+            }
+        </style>
+    </head>
+ <body>
+    <header>
+        <h1 class="float_left">
+          <span><img src="delluna/dellunalogo.png" height=70% width=70%></span>
+        </h1>
+        <nav class="float_right">
+          <ul>
+            <li>
+                <a class="menu" href="index.html" target="_blank"><strong>INDEX</strong></a>
+            </li>
+            <li>
+                <a class="menu" href="layout1.html" target="_blank"><strong>LAYOUT1</strong></a>
+            </li>
+            <li>
+                <a class="menu" href="layout2.html" target="_blank"><strong>LAYOUT2</strong></a>
+            </li>
+            <li>
+                <a class="menu" href="layout3.html" target="_blank"><strong>LAYOUT3</strong></a>
+            </li>
+            <li>
+                <a class="menu" href="hoteldelluna.html" target="_blank"><strong>DEL LUNA</strong></a>
+            </li>
+            <div class="clear"></div>
+          </ul>
+        </nav>
+        <div class="clear"></div>
+
+    <div id="main_visual">
+      <div class="main_visual_text">
+        <h2>
+            <strong>HOTEL DEL LU NA<br></br>
+            ALWAYS WITH YOU</strong>
+        </h2>
+          <div class="long_line_main_visual"></div>
+            <p class="main_visual_ment">
+              여러분의 인생에 있어서, 우리 호텔 델루나가<br></br>
+              잊지 못할 경험을 선사해드립니다.
+            </p>
+      </div>
+    </div>
+    </header> 
+
+   <div id=wrap>
+    <div class="characterintro">
+    <p class="characterintrotitle">
+        <strong>ABOUT HOTEL DEL LU NA</strong>
+    </p>
+    <div class="middle_line"></div>
+    <p class="characterintrotext">
+      호텔 델루나 공식 사이트에 오신 것을 환영합니다.<br></br>
+      우리 호텔 델루나는 손님들을 친절히 받습니다. <strong>단, 귀신만!</strong><br></br>
+      <br></br>
+      2019년, 서울 시내 가장 번화한 도심 한복판.<br></br>
+      가장 금싸라기 땅에 자리 잡고 있는 낡고 허름한 건물.<br></br>
+      언뜻보면 재건축을 준비하고 있는 빈 건물인 듯도 보이지만<br></br>
+      자세히 보면, 영업 중인 호텔이다.<br></br>
+      <br></br>
+      그 앞을 지나는 수백만의 유동인구가 있지만,<br></br>
+      정작 그 호텔 안으로 들어가는 손님은 거의 없다. 낮에는.<br></br>
+      밤이 깊어 인적이 끊기고 도심이 잠들 때,<br></br>
+      간판에 불이 켜진다.... 호텔 델루나.<br></br>
+      <br></br>
+      령빈(靈賓) 전용 호텔 델루나에<br></br>
+      초엘리트 호텔리어 구찬성이 지배인으로 근무하며,<br></br>
+      괴팍하고 심술궂은 사장 장만월과 함께,<br></br>
+      특별한 영혼손님들에게 특급서비스를 제공하며 벌어지는 이야기.<br></br>
+    </p>
+     <div class="dellunaintro_square">
+      <img src="delluna/delluna_intro_2.gif" width=40%  height=40% />
+     </div>
+    </div>
+
+    <div class="characterintro">
+    <p class="characterintrotitle">
+        <strong>MAIN CHARACTERS</strong>
+    </p>
+    <div class="middle_line"></div>
+     <p class="characterintrotext">
+        호텔 델루나의 객주와 지배인인<br></br>
+        두 주인공을 소개합니다.
+     </p>
+    </div>
+
+    <div class="container">
+      <section>
+        <div class="maincharacter">
+            <a href="https://www.instagram.com/fullmoon.long/" target=_blank>
+                <div class="manweolcircle"></div>
+            </a>
+            <dl>
+                <dt>CHANG MAN WEOL</dt>
+                <dd>
+                  배우  <strong>이지은</strong><br></br>
+                <div class="short_line"></div>
+                  <strong>큰 죄를 짓고 델루나에 묶인 저주에 걸린 여인</strong><br></br>
+                  1300여년 전부터 호텔의 객주로서 일해왔다.<br></br>
+                  구찬성에게 접근해 그를 무작정 호텔로 끌어들이는데...<br></br>
+                  만월은 찬성과 무슨 인연이라도 있는 걸까?<br></br>
+                </dd>
+            </dl>
+        </div>
+
+        <div class="maincharacter">
+            <a href="https://www.instagram.com/yeojin9oo/" target=_blank><div class="chanseongcircle"></div></a>
+            <dl>
+                <dt>KOO CHAN SEONG</dt>
+                <dd>
+                  배우  <strong>여진구</strong><br></br>
+                <div class="short_line"></div>
+                  <strong>엘리트 호텔리어이자 호텔 델루나의 인간 지배인</strong><br></br>
+                  델루나의 객주 장만월과 엮이면서<br></br>
+                  파란만장한 인생을 겪게 된다.<br></br>
+                  상상도 못한 세계가 그에게 펼쳐지는데...<br></br>
+                </dd>
+            </dl>
+        </div>
+      </section>
+    </div>
+
+    <div class="characterintro">
+      <p class="characterintrotitle">
+        <strong>HOTEL EMPLOYEES</strong>
+          </p>
+            <div class="middle_line"></div>
+            <p class="characterintrotext">
+              오랜 시간을 델루나에서 함께해온<br></br>
+              4명의 호텔 직원들을 소개합니다.
+            </p>
+    </div>
+
+    <div class="hotelemployees">
+      <nav class="hotelemployees_nav">
+        <ul>
+          <li>
+            <img src="delluna/choiseohee.png"></img>
+            <p><strong>최서희</strong></p>
+            <p>배우  <strong>배해선</strong></p>
+            <div class="short_line"></div>
+            <p class="hotelemployees_text">
+               근무 경력 200년의 호텔 델루나 객실장.<br></br>
+               똑 부러지는 성격으로, 조선 명문가의 맏며느리였다고.
+            </p>
+          </li>
+
+          <li>
+            <img src="delluna/kimseonbi.png"></img>
+            <p><strong>김선비</strong></p>
+            <p>배우  <strong>신정근</strong></p>
+            <div class="short_line"></div>
+            <p class="hotelemployees_text">
+               500년 근무 경력의 바텐더. 과거 장원 급제를 한<br></br>
+               선비였다는 자부심이 강하다.
+            </p>
+          </li>
+          
+          <li>
+            <img src="delluna/jihyunjoong.png"></img>
+            <p><strong>지현중</strong></p>
+            <p>배우  <strong>표지훈</strong></p>
+            <div class="short_line"></div>
+            <p class="hotelemployees_text"> 
+               한국 전쟁통에 사망하여 70년째 근무 중.<br></br>
+               예의 바르고 착한 성격의 십대 소년.
+            </p>
+          </li>
+            
+          <li>
+            <img src="delluna/kimyuna.png"></img>
+            <p><strong>김유나</strong></p>
+            <p>배우  <strong>강미나</strong></p>
+            <div class="short_line"></div>
+            <p class="hotelemployees_text">
+               내면에 기구한 사연이 담겨 있는 여고생 인턴사원.<br></br>
+               구찬성의 지배인 자리를 노리고 있다.
+            </p>
+          </li>
+          <div class="clear"></div>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="characterintro">
+        <p class="characterintrotitle">
+         <strong>OTHER CHARACTERS</strong>
+        </p>
+        <div class="middle_line"></div>
+        <p class="characterintrotext">
+          만월과 찬성 주변에 있는 인물들을 소개합니다.
+        </p>
+    </div>
+
+    <div class="othercharacters">
+        <nav class="othercharacters_nav">
+          <ul>
+            <li>
+                <img src="delluna/sanche.png"></img>
+                <p><strong>산체스</strong></p>
+                <p>배우  <strong>조현철</strong></p>
+                <div class="short_line"></div>
+                <p class="othercharacters_text">
+                   구찬성의 룸메이트, 장만월의 친구.<br></br>
+                   영적 능력이 없어 델루나의 실체를 알지 못한다.
+                </p>
+            </li>
+            <li>
+                <img src="delluna/leemira.png"></img>
+                <p><strong>이미라</strong></p>
+                <p>배우  <strong>박유나</strong></p>
+                <div class="short_line"></div>
+                <p class="othercharacters_text">
+                   구찬성이 대학생 때 만난 친구.<br></br>
+                   전형적인 부잣집 엄친딸이다.
+                </p>
+            </li>
+          <li>
+                <img src="delluna/kocheongmyeong.png"></img>
+                <p><strong>고청명</strong></p>
+                <p>배우  <strong>이도현</strong></p>
+                <div class="short_line"></div>
+                <p class="othercharacters_text">
+                   자신이 호위하던 행렬을 습격한 만월과<br></br>
+                   만나면서 여러 사건을 겪게 되는 인물.
+                </p>
+            </li>
+            <li>
+                <img src="delluna/yeonwoo.png"></img>
+                <p><strong>연우</strong></p>
+                <p>배우  <strong>이태선</strong></p>
+                <div class="short_line"></div>
+                <p class="othercharacters_text">
+                   만월과 같은 도적패 일당 중 한 명.<br></br>
+                   만월과 친구처럼, 때로는 남매처럼 자라온 사이.
+                </p>
+            </li>
+            <li>
+                <img src="delluna/sasin.png"></img>
+                <p><strong>사신</strong></p>
+                <p>배우  <strong>강홍석</strong></p>
+                <div class="short_line"></div>
+                <p class="othercharacters_text">
+                   본업은 저승으로 영혼을 데려가는 사신이며,<br></br>
+                   손님들을 택시에 태워 저승으로 인도하는 자.
+                </p>
+            </li>
+            <li>
+                <img src="delluna/magosin.png"></img>
+                <p><strong>마고신</strong></p>
+                <p>배우  <strong>서이숙</strong></p>
+                <div class="short_line"></div>
+                <p class="othercharacters_text">
+                   인간의 생사고락을 관장하는 신.<br></br>
+                   다양한 성격의 열두 자매이다.
+                </p>
+            </li>
+          <li>
+                <img src="delluna/nojunseok.png"></img>
+                <p><strong>노준석</strong></p>
+                <p>배우  <strong>정동환</strong></p>
+                <div class="short_line"></div>
+                <p class="othercharacters_text">
+                   1980년대부터 30년째 호텔에서 일하고 있다.<br></br>
+                   생을 마감하려 들린 호텔에서 만월을 만났다고.
+                </p>
+            </li>
+            <li>
+                <img class="blanklogo" src="delluna/dellunalogo.png" /></img>
+            </li>
+            <div class="clear"></div>
+          </ul>
+        </nav>
+    </div>
+
+    <div class="characterintro">
+            <p class="characterintrotitle">
+             <strong>VIDEO DELUNA</strong>
+            </p>
+            <div class="middle_line"></div>
+            <p class="characterintrotext">
+                델루나에서 일어나는 일이 궁금하지 않으세요?<br></br>
+                호텔 안을 엿볼 수 있는 영상 몇 가지가 있습니다.
+                <br></br>
+            </p>
+        </div>
+    
+    <div class="videos">
+     <div class="video_child">
+        <p class="videotext">
+            만월 vs 찬성 팽팽한 기싸움!
+        </p>
+        <video weight=720 height=540 controls muted>
+              <source src="delluna/teaser1.mp4" type="video/mp4" weight=30% height=30%></source>
+        </video>
+        <p class="videotext">
+            만월에게 찬성은?<br></br>
+            찬성에게 만월은?
+        </p>
+        <video weight=720 height=540 controls muted>
+              <source src="delluna/teaser2.mp4" type="video/mp4" weight=30% height=30%></source>
+        </video>
+        <video weight=720 height=540 controls muted>
+              <source src="delluna/teaser3.mp4" type="video/mp4" weight=30% height=30%></source>
+        </video>
+     </div>
+    </div>
+    
+    <div class="characterintro">
+        <p class="characterintrotitle">
+         <strong>MANWOL GALLERY</strong>
+        </p>
+        <div class="middle_line"></div>
+        <p class="characterintrotext">
+            호텔 델루나와 장만월이 함께한 시간을<br></br>
+            사진과 함께 공개합니다.<br></br>
+        </p>
+    </div>
+
+    <div class="history">
+        <div class="history_part">
+            <div class="circle1"></div>
+            <dl>
+                <dt>1927</dt>
+                <div class="short_line"></div>
+        </div>
+
+        <div class="history_part">
+            <div class="circle2"></div>
+            <dl>
+                <dt>1927</dt>
+                <div class="short_line"></div>
+        </div>
+    
+        <div class="history_part">
+            <div class="circle3"></div>
+            <dl>
+                <dt>1932</dt>
+                <div class="short_line"></div>
+        </div>
+    
+         <div class="history_part">
+            <div class="circle4"></div>
+            <dl>
+                <dt>1932</dt>
+                <div class="short_line"></div>
+        </div>
+
+        <div class="history_part">
+            <div class="circle5"></div>
+            <dl>
+                <dt>1960</dt>
+                <div class="short_line"></div>
+        </div>
+
+        <div class="history_part">
+            <div class="circle6"></div>
+            <dl>
+                <dt>1972</dt>
+                <div class="short_line"></div>
+        </div>
+
+        <div class="history_part">
+            <div class="circle7"></div>
+            <dl>
+                <dt>1988</dt>
+                <div class="short_line"></div>
+        </div>
+
+        <div class="history_part">
+            <div class="circle8"></div>
+            <dl>
+                <dt>2019 SPRING</dt>
+                <div class="short_line"></div>
+        </div>
+
+        <div class="history_part">
+            <div class="circle9"></div>
+            <dl>
+                <dt>2019 SUMMER</dt>
+                <div class="short_line"></div>
+        </div>
+    </div>
+
+    <div  class="clear"></div>
+
+    <div class="characterintro_2">
+        <p class="characterintrotitle">
+         <strong>OST DELUNA</strong>
+        </p>
+        <div class="middle_line"></div>
+        <p class="characterintrotext">
+            델루나의 장면 하나하나를 빛낸 OST!<br></br>
+            델루나 <strong>베스트 OST 4곡</strong>을 뽑아보았습니다.
+        </p>
+    </div>
+
+    <div class="content">
+    <div class="content_part2">
+      <img src="delluna/anotherday.jpg"  width=300px height=300px />
+        <p class="osttitle">
+          <strong>먼데이키즈, 펀치 - Another Day</strong>
+            </p>  
+            <div class="short_line"></div>
+            <p class="osttext">
+                상대방을 그리워하는 내용의 곡으로<br></br>
+                호텔 델루나의 이야기와 잘 어울린다.
+            </p>
+    </div>
+
+    <div class="content_part2">
+       <img src="delluna/myshoulder.jpg"  width=300px height=300px />
+         <p class="osttitle">
+           <strong>10cm - 나의 어깨에 기대어요</strong>
+           </p>  
+           <div class="short_line"></div>
+           <p class="osttext">
+                사랑하는 사람에게 어깨를<br></br>
+                기대라는 내용의 곡으로<br></br>
+                가수의 감미로운 목소리가 돋보인다.
+           </p>
+    </div>
+
+    <div class="content_part2">
+       <img src="delluna/youpoem.jpg"  width=300px height=300px />
+         <p class="osttitle">
+            <strong>태연 - 그대라는 시</strong>
+            </p>  
+            <div class="short_line"></div>
+             <p class="osttext">
+                상대를 시에 비유한 노래로<br></br>
+                OST 퀸 태연이 이 곡을 담당했다.
+            </p>
+    </div>
+
+    <div class="content_part2">
+          <img src="delluna/seemymind.jpg"  width=300px height=300px />
+            <p class="osttitle">
+            <strong>헤이즈 - 내 마음 볼 수 있나요</strong>
+            </p>  
+            <div class="short_line"></div>
+            <p class="osttext">
+                짝사랑하는 사람에게 마음을<br></br>
+                호소하는 노래로<br></br>
+                헤이즈의 감성 있는 보컬이 특징.
+            </p>
+    </div>
+   </div>
+
+   <div  class="clear"></div>
+
+   <footer>
+       HOTEL DEL LU NA ALWAYS WITH YOU
+  </div>
+ </body>
+</html>

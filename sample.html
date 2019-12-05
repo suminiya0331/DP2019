@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>기말</title>
+        <meta charset="utf-8"/>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+            body{
+                font-family: 'Noto Sans KR', sans-serif;
+                background-color: black;
+                color:gold;
+            }
+            header{
+                background-color:black;
+                color: gold;
+                padding: 10px 50px; /*상하 좌우*/;
+            }
+            header>nav>ul>li{
+                float: left;
+                list-style: none;
+                padding: 0px 10px;
+            }
+            .float_right{
+                float:right;
+            }
+            .clear{
+                clear:both; height:0; overflow:hidden;
+            }
+            .memberintro{
+                margin-top:50px;
+                margin-bottom:50px;
+            }
+            .memberintrotitle{
+                text-align:center;
+                font-size:25px;
+                letter-spacing: 5px;
+            }
+            .memberintrotext{
+                text-align:center;
+                line-height:105%;
+                letter-spacing:-0.8px;
+            }
+            .container{
+                padding: 70px;
+                margin-top: 20px;
+                text-align: center;
+                margin-left:auto;
+                margin-right:auto;
+            }
+            .container>section
+            {
+                /* margin-left: 180px; */
+                width: 1200px;
+            }
+            .content_part
+            {
+                float: left; /*둥둥 떠다니기 왼쪽 기준으로*/
+                width:480px;
+                margin:50px;
+            }
+            .container dt
+            {
+                font-weight:bold;
+                margin-top:25px;
+                margin-bottom:25px;
+                margin-left:auto;
+                margin-right:auto;
+                letter-spacing:-0.8px;
+                color: gold;
+                font-size:19px;
+            }
+            .container dd
+            {
+                margin-top:10px;
+                margin-bottom:10px;
+                margin-left:auto;
+                margin-right:auto;
+                line-height:110%;
+                letter-spacing:-0.8px;
+                color: gold;
+            }
+            .short_line{
+                border: solid 0.5px gold;
+                width: 50px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-top:auto;
+                margin-bottom:25px;
+                color: gold;
+            }
+            .middle_line{
+                border: solid 0.5px gold;
+                width: 150px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-top:auto;
+                margin-bottom:25px;
+                color: gold;
+            }
+            .seungwoocircle{
+                width: 400px;                              
+                height: 400px;                            
+                background: black;                          
+                border-radius: 400px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom:10px;
+                background-image: url("final_images/seungwoo_circle.png");
+            }
+            .seungwoocircle:hover{
+                background-image: url("final_images/seungwoo2_circle.png");
+            }
+            .seungsikcircle{
+                width: 400px;                              
+                height: 400px;                            
+                background: black;                        
+                border-radius: 400px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom:10px;
+                background-image: url("final_images/seungsik_circle.png");
+            }
+            .seungsikcircle:hover{
+                background-image: url("final_images/seungsik2_circle.png");
+            }
+            .chancircle{
+                width: 400px;                              
+                height: 400px;                            
+                background: black;                          
+                border-radius: 400px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom:10px;
+                background-image: url("final_images/chan_circle.png");
+            }
+            .chancircle:hover{
+                background-image: url("final_images/chan2_circle.png");
+            }
+            .sejuncircle{
+                width: 400px;                              
+                height: 400px;                            
+                background: black;                          
+                border-radius: 400px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom:10px;
+                background-image: url("final_images/sejun_circle.png");
+            }
+            .sejuncircle:hover{
+                background-image: url("final_images/sejun2_circle.png");
+            }
+            .hansecircle{
+                width: 400px;                              
+                height: 400px;                            
+                background: black;                          
+                border-radius: 400px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom:10px;
+                background-image: url("final_images/hanse_circle.png");
+            }
+            .hansecircle:hover{
+                background-image: url("final_images/hanse2_circle.png");
+            }
+            .byeongchancircle{
+                width: 400px;                              
+                height: 400px;                            
+                background: black;                          
+                border-radius: 400px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom:10px;
+                background-image: url("final_images/byeongchan_circle.png");
+            }
+            .byeongchancircle:hover{
+                background-image: url("final_images/byeongchan2_circle.png");
+            }
+            .subincircle{
+                width: 400px;                              
+                height: 400px;                            
+                background: black;                          
+                border-radius: 400px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom:10px;
+                background-image: url("final_images/subin_circle.png");
+            }
+            .subincircle:hover{
+                background-image: url("final_images/subin2_circle.png");
+            }
+            .victond1circle{
+                width: 400px;                              
+                height: 400px;                            
+                background: black;                          
+                border-radius: 400px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom:10px;
+                background-image: url("final_images/victond1_circle.png");
+            }
+            .victond1circle:hover{
+                background-image: url("final_images/victond1_2_circle.png");
+            }
+            .victond2circle{
+                width: 400px;                              
+                height: 400px;                            
+                background: black;                          
+                border-radius: 400px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom:10px;
+                background-image: url("final_images/victond2_circle.png");
+            }
+            .victond2circle:hover{
+                background-image: url("final_images/victond2_2_circle.png");
+            }
+            #wrap{
+                min-width: 900px;
+                max-width: 1920px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        </style>
+    </head>
+   <body>
+        <header>
+            <h1 class="float_left">
+                <span>VICTON</span>
+            </h1>
+            <nav class="float_right">
+                <ul>
+                    <li>HOME</li>
+                    <li>ABOUT ME</li>
+                    <li>SERVICES</li>
+                    <li>MY WORK</li>
+                    <li>CONTACT ME</li>
+                    <div class="clear"></div>
+                </ul>
+            </nav>
+            <div class="clear"></div>
+        </header>
+   <div id="wrap">
+        
+    <div class="main">
+        
+    </div>
+    <div class="memberintro">
+       <p class="memberintrotitle"><strong>GROUP AND MEMBERS</strong></p>
+       <div class="middle_line"></div>
+       <p class="memberintrotext">
+          데뷔 전 연습생 생활 때부터 오랜 시간을 함께해온<br></br>
+          7명의 멤버들을 소개합니다.
+       </p>
+    </div>
+    <div class="container">
+        <div class="content_part">
+            <div class="seungwoocircle"></div>
+            <dl>
+                <dt>SEUNG WOO</dt>
+                <div class="short_line"></div>
+                <dd>
+                    본명  <strong>한승우</strong><br></br>
+                    생년월일  <strong>1994. 12. 24</strong><br></br>
+                    출생지  <strong>부산광역시 금구</strong><br></br>
+                    포지션 <strong>리더 리드보컬 리드래퍼</strong><br></br>
+                </dd>
+            </dl>
+        </div>
+
+        <div class="content_part">
+            <div class="seungsikcircle"></div>
+            <dl>
+                <dt>SEUNG SIK</dt>
+                <div class="short_line"></div>
+                <dd>
+                    본명  <strong>강승식</strong><br></br>
+                    생년월일  <strong>1995. 04. 16</strong><br></br>
+                    출생지  <strong>경기도 용인시</strong><br></br>
+                    포지션 <strong>리더 메인보컬</strong><br></br>
+                </dd>
+            </dl>
+        </div>
+
+        <div class="content_part">
+            <div class="chancircle"></div>
+            <dl>
+                <dt>CHAN</dt>
+                <div class="short_line"></div>
+                <dd>
+                    본명  <strong>허찬</strong><br></br>
+                    생년월일  <strong>1995. 12. 14</strong><br></br>
+                    출생지  <strong>경기도 성남시</strong><br></br>
+                    포지션 <strong>메인댄서 서브보컬</strong><br></br>
+                </dd>
+            </dl>
+        </div>
+
+        <div class="content_part">
+            <div class="sejuncircle"></div>
+            <dl>
+                <dt>SE JUN</dt>
+                <div class="short_line"></div>
+                <dd>
+                    본명  <strong>임세준</strong><br></br>
+                    생년월일  <strong>1996. 05. 04</strong><br></br>
+                    출생지  <strong>서울특별시 성동구</strong><br></br>
+                    포지션 <strong>센터 서브보컬</strong><br></br>
+                </dd>
+            </dl>
+        </div>
+
+        <div class="content_part">
+            <div class="hansecircle"></div>
+            <dl>
+                <dt>HAN SE</dt>
+                <div class="short_line"></div>
+                <dd>
+                    본명  <strong>도한세</strong><br></br>
+                    생년월일  <strong>1997. 09. 25</strong><br></br>
+                    출생지  <strong>인천광역시 서구</strong><br></br>
+                    포지션 <strong>메인래퍼</strong><br></br>
+                </dd>
+            </dl>
+        </div>
+
+        <div class="content_part">
+            <div class="byeongchancircle"></div>
+            <dl>
+                <dt>BYEONG CHAN</dt>
+                <div class="short_line"></div>
+                <dd>
+                    본명  <strong>최병찬</strong><br></br>
+                    생년월일  <strong>1997. 11. 12</strong><br></br>
+                    출생지  <strong>전라북도 전주시</strong><br></br>
+                    포지션 <strong>보컬</strong><br></br>
+                </dd>
+            </dl>
+        </div>
+
+        <div class="content_part">
+            <div class="subincircle"></div>
+            <dl>
+                <dt>SU BIN</dt>
+                <div class="short_line"></div>
+                <dd>
+                    본명  <strong>정수빈</strong><br></br>
+                    생년월일  <strong>1999. 04. 05</strong><br></br>
+                    출생지  <strong>대전광역시 서구</strong><br></br>
+                    포지션 <strong>보컬</strong><br></br>
+                </dd>
+            </dl>
+        </div>
+
+        <div class="content_part">
+            <div class="victond1circle"></div>
+            <dl>
+                <dt>BYEONG CHAN</dt>
+                <div class="short_line"></div>
+                <dd>
+                    본명  <strong>최병찬</strong><br></br>
+                    생년월일  <strong>1997. 11. 12</strong><br></br>
+                    출생지  <strong>전라북도 전주시</strong><br></br>
+                    포지션 <strong>보컬</strong><br></br>
+                </dd>
+              </dl>
+          </div>
+
+        <div class="content_part">
+            <div class="victond2circle"></div>
+            <dl>
+                <dt>SU BIN</dt>
+                <div class="short_line"></div>
+                <dd>
+                    본명  <strong>정수빈</strong><br></br>
+                    생년월일  <strong>1999. 04. 05</strong><br></br>
+                    출생지  <strong>대전광역시 서구</strong><br></br>
+                    포지션 <strong>보컬</strong><br></br>
+                </dd>
+            </dl>
+        </div>
+    </div>
+   </div> 
+  </body>
+</html>
