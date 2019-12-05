@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>기말고사</title>
+        <title>호텔 델루나</title>
         <meta charset="utf-8"/>
         <style>
          @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
@@ -264,8 +264,8 @@
                 padding:20px;
                 float:left;
             }
-            .content{
-                width: 1400px;
+            #content{
+                width: 1430px;
                 padding: 20px;
                 margin-left:auto;
                 margin-right:auto;
@@ -456,6 +456,71 @@
                 text-align:center;
                 margin-left:auto;
                 margin-right:auto;
+            }
+            footer>a{
+                text-decoration:none;
+                color:gold;
+            }
+            .category{
+                font-weight:bold;
+            }
+            .card dd{
+                padding:5px;
+                margin: 5px;
+                margin-left:0px;
+                font-size: 12px;
+                line-height:95%;
+                margin-top:10px;
+            }
+            .card dt{
+                font-weight: bold;
+                font-size:15px;
+                padding:5px;
+            }
+            .card .category{
+                background-color:black;
+                color: white;
+                /* width: 150px; */
+                display:block; /* 표시방식: 블록 */
+                display:inline-block; /* 인라인과 블록의 절충 */
+                padding: 5px;
+                padding: 2px 5px 5px 5px;
+    
+
+                position: static; /* 위치: 정적인 (기본형) */
+                position: absolute; /* 절대적인 */
+                bottom: 10px;
+                left: 10px;
+                /* top left right bottom */
+            }
+            .visual{
+                position: static; /*옛 명렬이라 무시됨*/
+                position: relative; /* 관계형 */
+                /* relative 부모는 absolute 자식의 기준점이 됨 */
+            }
+            .visual img{
+                display: inline-block; /* 표시: 인라인-블록 */
+                /* 이 경우 소문자 pjgy 등을 표시할 밑공간 필요 */
+                display: block;
+            }
+            .info{
+                padding: 20px;
+            }
+            #content li{
+                float:left;
+                list-style:none;
+                margin:15px;
+            }
+            .dots{
+                font-weight:bold;
+            }
+            .card{
+                background-color:white;
+                border-right: solid 1px gray;
+                border-left: solid 1px gray;
+                width: 300px;
+                list-style:none;
+                color:black;
             }
         </style>
     </head>
@@ -781,6 +846,7 @@
             <dl>
                 <dt>1927</dt>
                 <div class="short_line"></div>
+            </dl>
         </div>
 
         <div class="history_part">
@@ -788,6 +854,7 @@
             <dl>
                 <dt>1927</dt>
                 <div class="short_line"></div>
+            </dl>
         </div>
     
         <div class="history_part">
@@ -795,6 +862,7 @@
             <dl>
                 <dt>1932</dt>
                 <div class="short_line"></div>
+            </dl>
         </div>
     
          <div class="history_part">
@@ -802,6 +870,7 @@
             <dl>
                 <dt>1932</dt>
                 <div class="short_line"></div>
+            </dl>
         </div>
 
         <div class="history_part">
@@ -809,6 +878,7 @@
             <dl>
                 <dt>1960</dt>
                 <div class="short_line"></div>
+            </dl>
         </div>
 
         <div class="history_part">
@@ -816,6 +886,7 @@
             <dl>
                 <dt>1972</dt>
                 <div class="short_line"></div>
+            </dl>
         </div>
 
         <div class="history_part">
@@ -823,6 +894,7 @@
             <dl>
                 <dt>1988</dt>
                 <div class="short_line"></div>
+            </dl>
         </div>
 
         <div class="history_part">
@@ -830,6 +902,7 @@
             <dl>
                 <dt>2019 SPRING</dt>
                 <div class="short_line"></div>
+            </dl>
         </div>
 
         <div class="history_part">
@@ -837,6 +910,7 @@
             <dl>
                 <dt>2019 SUMMER</dt>
                 <div class="short_line"></div>
+            </dl>
         </div>
     </div>
 
@@ -853,62 +927,99 @@
         </p>
     </div>
 
-    <div class="content">
-    <div class="content_part2">
-      <img src="delluna/anotherday.jpg"  width=300px height=300px />
-        <p class="osttitle">
-          <strong>먼데이키즈, 펀치 - Another Day</strong>
-            </p>  
-            <div class="short_line"></div>
-            <p class="osttext">
-                상대방을 그리워하는 내용의 곡으로<br></br>
-                호텔 델루나의 이야기와 잘 어울린다.
-            </p>
-    </div>
+    <div id="content">
+            <ul>
+                <li class="card">
+                    <div class="visual">
+                        <img src="delluna/anotherday.jpg" width=300px height=300px/>
+                        <div class="category">
+                           <strong>먼데이키즈, 펀치 - Another Day</strong>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <dt>Another Day</dt>
+                    <dd>
+                        <div class="dots">먼데이 키즈, 펀치</div>
+                        <p>
+                            상대방을 그리워하는 내용의 곡으로<br></br>
+                            호텔 델루나의 이야기와 잘 어울린다.
+                        </p>
+                        <div class="long_line"></div>
+                    </dd>
+                    </div>
+                </li>
 
-    <div class="content_part2">
-       <img src="delluna/myshoulder.jpg"  width=300px height=300px />
-         <p class="osttitle">
-           <strong>10cm - 나의 어깨에 기대어요</strong>
-           </p>  
-           <div class="short_line"></div>
-           <p class="osttext">
-                사랑하는 사람에게 어깨를<br></br>
-                기대라는 내용의 곡으로<br></br>
-                가수의 감미로운 목소리가 돋보인다.
-           </p>
-    </div>
+                <li class="card">
+                  <div class="visual">
+                      <img src="delluna/myshoulder.jpg" width=300px height=300px/>
+                      <div class="category">
+                         <strong>10cm - 나의 어깨에 기대어요</strong>
+                      </div>
+                  </div>
+                  <div class="info">
+                      <dt>나의 어깨에 기대어요</dt>
+                  <dd>
+                      <div class="dots">10cm</div>
+                      <p>
+                            사랑하는 사람에게 어깨를 기대라는 내용으로<br></br>
+                            가수의 감미로운 목소리가 돋보인다.
+                      </p>
+                      <div class="long_line"></div>
+                  </dd>
+                  </div>
+              </li>
 
-    <div class="content_part2">
-       <img src="delluna/youpoem.jpg"  width=300px height=300px />
-         <p class="osttitle">
-            <strong>태연 - 그대라는 시</strong>
-            </p>  
-            <div class="short_line"></div>
-             <p class="osttext">
-                상대를 시에 비유한 노래로<br></br>
-                OST 퀸 태연이 이 곡을 담당했다.
-            </p>
-    </div>
+              <li class="card">
+                  <div class="visual">
+                      <img src="delluna/youpoem.jpg" width=300px height=300px/>
+                      <div class="category">
+                          <strong>태연 - 그대라는 시</strong>
+                      </div>
+                  </div>
+                  <div class="info">
+                      <dt>그대라는 시</dt>
+                  <dd>
+                      <div class="dots">태연</div>
+                      <p>
+                        상대를 시에 비유한 노래로<br></br>
+                        OST 퀸 태연이 이 곡을 담당했다.
+                      </p>
+                      <div class="long_line"></div>
+                  </dd>
+                  </div>
+              </li>
 
-    <div class="content_part2">
-          <img src="delluna/seemymind.jpg"  width=300px height=300px />
-            <p class="osttitle">
-            <strong>헤이즈 - 내 마음 볼 수 있나요</strong>
-            </p>  
-            <div class="short_line"></div>
-            <p class="osttext">
-                짝사랑하는 사람에게 마음을<br></br>
-                호소하는 노래로<br></br>
-                헤이즈의 감성 있는 보컬이 특징.
-            </p>
-    </div>
-   </div>
+              <li class="card">
+                  <div class="visual">
+                      <img src="delluna/seemymind.jpg" width=300px height=300px/>
+                      <div class="category">
+                          <strong>헤이즈 - 내 맘을 볼 수 있나요</strong>
+                      </div>
+                  </div>
+                  <div class="info">
+                      <dt>내 맘을 볼 수 있나요</dt>
+                  <dd>
+                      <div class="dots">헤이즈</div>
+                      <p>
+                        짝사랑하는 사람에게 마음을 호소하는 노래로<br></br>
+                        헤이즈의 감성 있는 보컬이 특징.
+                      </p>
+                      <div class="long_line"></div>
+                  </dd>
+                  </div>
+              </li>
+            </ul>
+        </div>
 
    <div  class="clear"></div>
 
    <footer>
-       HOTEL DEL LU NA ALWAYS WITH YOU
+       <a href="./feeling.html">
+        HOTEL DEL LU NA ALWAYS WITH YOU</a>
+       <p>
+        ⓒ Copyrights 2019. Hotel Del Luna.
+       </p>
+   </footer>
   </div>
  </body>
 </html>
